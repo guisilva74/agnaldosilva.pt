@@ -1,0 +1,114 @@
+<!doctype html> 
+<html Lang="pt-pt"> 
+	<head>
+		<meta charset="utf-8"/> <!--codificação--->
+		<title>site inicial</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="shortcut icon" href="img/icone.ico" type="image/x-icon">
+	</head> 
+	
+	<body> 
+			<header>
+				<h1>contatos</h1>
+			</header>
+		<!--navegação-->
+		<nav>
+			<a href="index.html">index</a>
+			<a href="outros_cursos.html">outros Cursos</a>
+			<a href="contatos.html">contatos</a>
+			<a href="recursos.html">Recursos</a>
+			
+		</nav>
+
+		<main>
+			<h2>Formulário de contato</h2>
+			<p>Para pedir informações e inscrever-se no curso, utilize o seguinte formalário:</p>
+			<form action="mailto:agnaldosilva@sapo.pt" method="post" target="_blank">
+				<label for="nome">nome:</label>
+				<input name="name" type="text" id="nome" required></label>
+				<br>
+				<label for="telefone">Telefone:</label>
+				<input name="telefone" type="tel" id="telefone" pattern="[0-9]{9}" required>
+				<br>
+				<label for="email">E-mail:</label>
+				<input name="email" type="email" id="email"  required>
+				<br>
+				<label for="localidade">localidade:</label>
+				<select name="localidade" id="localidade">
+					<option value="az">Ponta Delgada</option>
+					<option value="Lagoa">Lagoa</option>
+					<option value="rg">Ribeira Grabde</option>
+					<option value="nd">Nordeste</option>
+					<option value="vf">Vila Franca do Campo</option>
+					<option value="tc">Terceira</option>
+				</select>
+				<br>
+				<label for="ti"Grau de motivação para o curso:></label> pouca
+				<input type="range" id="ti" name="ti" min="0" max="20"> muita
+				<br>
+				<label for="tipoaluno">Tipo de aluno:</label>
+				<label for="externo">Externo</label>
+				<input type="radio" id="externo" name="tipoaluno" value="externo">
+				<input type="radio" id="interno" name="tipoaluno" value="interno">
+				<label for="interno">Interno</label>
+				<br>
+				<label for="preferencia">Preferência de hotario de contato:</label>
+				<input type="checkbox" id="manha" name="manha" value="manha">
+				<label for=""manha>Manhã</label>
+				<input type="checkbox" id="tarde" name="tarde" value="tarde">
+				<label for=""manha>Tarde</label>
+				<input type="checkbox" id="noite" name="noite" value="noite">
+				<label for=""manha>Noite</label>
+				<br>
+				<label for="datanascimento">Data de nascimento: </label>
+				<input type="date" id="datanascimento" name="datanascimento">
+				<br>
+				<label for="retido">Número de retenções: </label>
+				<input type="number" id="retido" name="retido" min="0" max="5">
+				<br>
+				<label for="certificado">Anexe o seu certificado de habilitações: </label>
+				<input type="file" name="certificado" id="certificado">
+				<br>
+				<label for="duvidas">Dúvidas / Sugestões: </label>
+				<textarea name="duvidas" rows="4">Coloque aqui as suas questões, sugestões, dúvidass, .........</textarea>
+				<br>
+				<input type="reset" value="limpar" class="botao">
+				<input type="submit" value="enviar" class="botao" onclick="alert('Tem a certeza que pretende submeter estes dados?')">
+	
+	
+			</form>
+
+			<h2>mapa</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424319.7386397574!2d-25.545736981827297!3d37.84874035202748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb5cd77250e697c3%3A0xae4f6f26c3f63890!2sIlha%20de%20S%C3%A3o%20Miguel!5e1!3m2!1spt-PT!2spt!4v1644070617321!5m2!1spt-PT!2spt" class="mapa"frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+			
+
+		</main>	
+		<aside>
+			<h2>Outros contatos:</h2>
+			<p><strong>&#9743;</strong> 935141813</p>
+			<p><strong>&#9993;</strong> cultura@casadobrasildelisboa.pt</p>
+			<p><strong>&#9758;</strong> Rua: Luiz soriano, nº 42</p>
+			<br>1200-248 Lisboa:</p>
+			<hr>
+			<h2>Horário de Atendimento:</h2>
+			Telefónico:
+			<ul>
+				<li>2ª a 6ª - 10h00 às 19h00</li>
+				<li>Sábados, das 10h00 ao meio deia</li>
+
+			</ul>
+		</aside>
+
+		<footer>
+			<p class="rodape">Agnaldo Silva | 2022
+				<br>
+				<a href="https://www.facebook.com/profile.php?id=100009144187887" target= "_blank"><img src="img/fb.png"class="socialmedia"></a>
+				<a href="https://www.instagram.com/agnaldo563/" target= "_blank"><img src="img/ins.jpg"class="socialmedia"></a>
+				<a href="https://www.linkedin.com/"target= "_blank" ><img src="img/link.png"class="socialmedia"></a>
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons - Atribuição  4.0 Internacional</a>.
+		</footer>
+	</body>
+</html>
